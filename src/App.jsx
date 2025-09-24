@@ -1,7 +1,7 @@
 import AboutMe from "./pages/AboutMe"
 import Contact from "./pages/Contact"
 import HeroPage from "./pages/HeroPage"
-import Portfolio from "./pages/Portfolio"
+// import Portfolio from "./pages/Portfolio"
 import Skills from "./pages/Skills"
 import FadeInSection from "./components/FadeInSection"
 import Header from "./components/Header"

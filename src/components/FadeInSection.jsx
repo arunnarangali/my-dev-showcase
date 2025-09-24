@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
+// eslint-disable-next-line no-unused-vars
 function FadeInSection({ children, className = "", as: Tag = "div", delay = 0 }) {
   const containerRef = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
@@ -44,5 +45,3 @@ function FadeInSection({ children, className = "", as: Tag = "div", delay = 0 })
 }
 
 export default FadeInSection
-
-
