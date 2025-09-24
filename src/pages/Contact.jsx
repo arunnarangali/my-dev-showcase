@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import axios from 'axios';
 import SectionHeading from '../components/SectionHeading';
 
 const Contact = () => {
