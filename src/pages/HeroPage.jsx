@@ -4,6 +4,7 @@ import profile from '../assets/images/profile.png';
 import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 import githubIcon from '../assets/images/github.svg'
 import linkedin from "../assets/images/linkedin.svg"
+import resumePDF from '../assets/ArunN-CV.pdf'
 // header is mounted at app root
 
 const HeroPage = () => {
@@ -32,7 +33,7 @@ const HeroPage = () => {
                 <SocialButton href="https://www.linkedin.com/in/arun-n-b10b88153/">
                 <img src={linkedin} alt="Linkedin" className="h-6 w-6" />
                 </SocialButton>
-                <SocialButton href="/cv/ArunN-CV.pdf" download filename="ArunN-CV.pdf">
+                <SocialButton href={resumePDF} download filename="ArunN-CV.pdf">
                   <ArrowDownTrayIcon className="h-6 w-6 text-black" />
                 </SocialButton>
               </div>

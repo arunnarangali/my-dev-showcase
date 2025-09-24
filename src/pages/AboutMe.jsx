@@ -47,7 +47,7 @@ const AboutMe = () => {
         <Divider />
 
         {/* Services Grid */}
-        <div className="flex flex-wrap justify-center md:justify-between gap-12 mb-20">
+        <div className="flex flex-wrap justify-center md:justify-between gap-12 mb-5">
           <ServiceCard
             title="DESIGN"
             description="Craft clean, user-centered UI, wireframes, and accessible layouts with Figma and Tailwind."
