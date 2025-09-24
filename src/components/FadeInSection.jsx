@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react"
 
-// eslint-disable-next-line no-unused-vars
-function FadeInSection({ children, className = "", as: Tag = "div", delay = 0 }) {
+function FadeInSection({ children, className = "", as = "div", delay = 0 }) {
   const containerRef = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
+  const Component = as // Use a different name
 
   useEffect(() => {
     const node = containerRef.current
@@ -30,7 +30,7 @@ function FadeInSection({ children, className = "", as: Tag = "div", delay = 0 })
   }
 
   return (
-    <Tag
+    <Component
       ref={containerRef}
       style={transitionStyle}
       className={[
@@ -40,7 +40,7 @@ function FadeInSection({ children, className = "", as: Tag = "div", delay = 0 })
       ].join(" ")}
     >
       {children}
-    </Tag>
+    </Component>
   )
 }
 
