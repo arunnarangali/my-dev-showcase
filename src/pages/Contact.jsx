@@ -69,10 +69,10 @@ const Contact = () => {
     <section id="contact" className="bg-gray-200 py-20 px-6 min-h-screen scroll-mt-24">
       <div className="max-w-2xl mx-auto">
         {/* Contact Heading */}
-        <SectionHeading title="CONTACT" className="mb-12" />
+        <SectionHeading title="CONTACT" className="mb-5" />
         
         {/* Description */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <p className="text-sm text-gray-700 leading-relaxed max-w-xl mx-auto">
             Have a project in mind or just want to say hello? I'd love to hear from you! 
             Whether you're looking for web development services, collaboration opportunities, 
@@ -81,7 +81,7 @@ const Contact = () => {
         </div>
 
         {/* Decorative Divider */}
-        <div className="flex items-center justify-center gap-4 mb-16">
+        <div className="flex items-center justify-center gap-4 mb-10">
           <div className="w-12 h-px bg-black"></div>
           <div className="flex gap-1">
             <div className="w-3 h-px bg-black transform rotate-45"></div>
