@@ -1,69 +1,89 @@
-import { useState } from 'react'
-import SectionHeading from '../components/SectionHeading';
-import PortfolioCard from '../components/PortfolioCard';
-import banner from '../assets/images/portfolio-banner.png';
+import { useState } from "react";
+import SectionHeading from "../components/SectionHeading";
+import PortfolioCard from "../components/PortfolioCard";
+import banner from "../assets/images/portfolio-banner.png";
 
+import tseepImg from "../assets/images/tseep.png";
+import skillImg from "../assets/images/skill-mapping.png";
+import vanforcesImg from "../assets/images/vanforces.png";
+import datastreamImg from "../assets/images/datastream.png";
+import libraryImg from "../assets/images/my-library.png";
 
 const Portfolio = () => {
-  const [activeFilter, setActiveFilter] = useState('ALL');
+  const [activeFilter, setActiveFilter] = useState("ALL");
 
   const portfolioItems = [
     {
       id: 1,
-      image: '/portfolio/neon-hex-1.jpg',
-      category: 'designed',
-      type: 'design'
+      image: tseepImg,
+      title: "Tseep",
+      description:
+        "Learning Management Platform with Student, Teacher, & HR portals.",
+      tags: "React.js, Golang, PostgreSQL",
+      category: "CODED",
+      type: "featured",
+      featured: true,
     },
     {
       id: 2,
-      image: '/portfolio/eatsome-project.jpg',
-      title: 'eatsome.',
-      description: 'Restaurant browsing in React.js (Using Yelp API)',
-      tags: 'coded, designed',
-      demoLink: '#',
-      moreLink: '#',
-      category: 'coded',
-      type: 'featured',
-      featured: true
+      image: skillImg,
+      title: "Intelitraits",
+      description:
+        "Skill assessment platform with automated scoring & reporting.",
+      tags: "React.js, Tailwind CSS, Golang",
+      category: "CODED",
+      type: "featured",
+      featured: true,
     },
     {
       id: 3,
-      image: '/portfolio/forest-car-1.jpg',
-      category: 'designed',
-      type: 'photography'
+      image: vanforcesImg,
+      title: "VanForces",
+      description:
+        "SaaS platform for van sales with route optimization & live monitoring.",
+      tags: "React.js, Golang, GPS Integration",
+      category: "CODED",
+      type: "featured",
+      featured: true,
     },
     {
       id: 4,
-      image: '/portfolio/neon-circle.jpg',
-      category: 'designed',
-      type: 'design'
+      image: datastreamImg,
+      title: "DataStream",
+      description:
+        "Real-time data processing system with dual database architecture.",
+      tags: "Golang, Kafka, SQL, ClickHouse",
+      category: "CODED",
+      type: "featured",
+      featured: true,
     },
     {
       id: 5,
-      image: '/portfolio/forest-car-2.jpg',
-      category: 'designed',
-      type: 'photography'
+      image: libraryImg,
+      title: "My Library",
+      description:
+        "Digital book management platform with search functionality.",
+      tags: "MERN Stack",
+      category: "CODED",
+      type: "featured",
+      featured: true,
     },
-    {
-      id: 6,
-      image: '/portfolio/neon-hex-2.jpg',
-      category: 'designed',
-      type: 'design'
-    }
   ];
 
-  const filteredItems = portfolioItems.filter(item => {
-    if (activeFilter === 'ALL') return true;
-    return item.category.toUpperCase() === activeFilter;
+  const filteredItems = portfolioItems.filter((item) => {
+    if (activeFilter === "ALL") return true;
+    return item.category === activeFilter;
   });
 
-  const filters = ['ALL', 'CODED', 'DESIGNED'];
+  const filters = ["ALL", "CODED"];
 
   return (
     <section id="portfolio" className="relative scroll-mt-24">
       {/* Hero Background */}
-      <div className="relative h-64 bg-cover bg-center" 
-           style={{backgroundImage: `url('${banner}')`}}>
+      <div
+        className="relative h-64 bg-cover bg-center"
+        style={{ backgroundImage: `url('${banner}')` }}
+      >
         <div className="absolute inset-0 bg-opacity-30"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <SectionHeading title="PORTFOLIO" className="text-white" />
@@ -83,8 +103,8 @@ const Portfolio = () => {
                     onClick={() => setActiveFilter(filter)}
                     className={`px-8 py-3 text-sm font-medium tracking-wider transition-colors ${
                       activeFilter === filter
-                        ? 'text-white border-b-2 border-white'
-                        : 'text-gray-400 hover:text-gray-200'
+                        ? "text-white border-b-2 border-white"
+                        : "text-gray-400 hover:text-gray-200"
                     }`}
                   >
                     {filter}
@@ -102,8 +122,8 @@ const Portfolio = () => {
               <div
                 key={item.id}
                 className={`
-                  ${index === 1 ? 'md:col-span-2 md:row-span-2' : ''}
-                  ${item.featured ? 'h-80 md:h-full' : 'h-60'}
+                  ${index === 1 ? "md:col-span-2 md:row-span-2" : ""}
+                  ${item.featured ? "h-80 md:h-full" : "h-60"}
                 `}
               >
                 <PortfolioCard
@@ -130,6 +150,6 @@ const Portfolio = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Portfolio
+export default Portfolio;
