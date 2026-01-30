@@ -1,4 +1,3 @@
-import React from "react";
 import SectionHeading from "../components/SectionHeading";
 import SkillCard from "../components/SkillCard";
 import react from "../assets/images/react.svg";

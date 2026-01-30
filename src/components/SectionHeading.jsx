@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SectionHeading = ({title,className = "" }) => {
   return (
     <div className={`flex justify-center ${className}`}>

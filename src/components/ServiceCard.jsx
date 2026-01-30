@@ -1,5 +1,3 @@
-import React from 'react'
-
 const ServiceCard = ({icon, title, description}) => {
   return (
     <div className="text-center max-w-sm">

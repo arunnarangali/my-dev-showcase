@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import SectionHeading from '../components/SectionHeading';
 import PortfolioCard from '../components/PortfolioCard';
 import banner from '../assets/images/portfolio-banner.png';

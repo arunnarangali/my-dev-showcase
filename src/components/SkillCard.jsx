@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SkillCard = ({icon, title, alt}) => {
   return (
     <div className="flex flex-col items-center text-center">
