@@ -2,7 +2,7 @@ import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import FloatingResumeButton from "./components/FloatingResumeButton";
 import HeroPage from "./pages/HeroPage";
-// import Portfolio from "./pages/Portfolio"
+import Portfolio from "./pages/Portfolio"
 import Skills from "./pages/Skills";
 import FadeInSection from "./components/FadeInSection";
 import Header from "./components/Header";
@@ -25,9 +25,9 @@ function App() {
       <FadeInSection delay={200}>
         <Skills />
       </FadeInSection>
-      {/* <FadeInSection delay={300}>
+      <FadeInSection delay={300}>
       <Portfolio />
-     </FadeInSection> */}
+     </FadeInSection>
       <FadeInSection delay={400}>
         <Contact />
       </FadeInSection>

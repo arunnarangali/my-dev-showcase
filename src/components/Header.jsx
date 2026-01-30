@@ -60,9 +60,9 @@ const Header = () => {
           <NavLink href="#skills" isActive={activeSection === "skills"}>
             Skills
           </NavLink>
-          {/* <NavLink href="#portfolio" isActive={activeSection === "portfolio"}>
+          <NavLink href="#portfolio" isActive={activeSection === "portfolio"}>
             Portfolio
-          </NavLink> */}
+          </NavLink>
         </nav>
         <a
           href="#contact"
