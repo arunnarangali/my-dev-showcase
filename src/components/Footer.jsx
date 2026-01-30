@@ -1,5 +1,4 @@
 import { ChevronUpIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
-import React from "react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -38,7 +37,7 @@ const Footer = () => {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/arun-n-b10b88153/"
+            href="https://www.linkedin.com/in/arun-narangali"
             target="_blank"
             rel="noopener noreferrer"
             className="w-8 h-8 flex items-center justify-center border border-white hover:bg-white hover:text-gray-900 transition-colors"

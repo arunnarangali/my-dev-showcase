@@ -1,10 +1,10 @@
-import React from 'react'
-import SocialButton from '../components/SocialButton';
-import profile from '../assets/images/profile.png';
-import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
-import githubIcon from '../assets/images/github.svg'
-import linkedin from "../assets/images/linkedin.svg"
-import resumePDF from '../assets/ArunN-CV.pdf'
+import React from "react";
+import SocialButton from "../components/SocialButton";
+import profile from "../assets/images/profile.png";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+import githubIcon from "../assets/images/github.svg";
+import linkedin from "../assets/images/linkedin.svg";
+import resumePDF from "../assets/ArunN-CV.pdf";
 // header is mounted at app root
 
 const HeroPage = () => {
@@ -30,8 +30,8 @@ const HeroPage = () => {
                 <SocialButton href="https://github.com/arunnarangali">
                   <img src={githubIcon} alt="GitHub" className="h-6 w-6" />
                 </SocialButton>
-                <SocialButton href="https://www.linkedin.com/in/arun-n-b10b88153/">
-                <img src={linkedin} alt="Linkedin" className="h-6 w-6" />
+                <SocialButton href="https://www.linkedin.com/in/arun-narangali">
+                  <img src={linkedin} alt="Linkedin" className="h-6 w-6" />
                 </SocialButton>
                 <SocialButton href={resumePDF} download filename="ArunN-CV.pdf">
                   <ArrowDownTrayIcon className="h-6 w-6 text-black" />
@@ -54,17 +54,13 @@ const HeroPage = () => {
         </div>
 
         {/* Background diagonal split */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0"
-        >
+        <div aria-hidden className="pointer-events-none absolute inset-0">
           {/* Left light side */}
           <div className=" absolute inset-y-0 left-0 w-[45%] h-auto md:skew-x-15 -skew-x-3 bg-zinc-200" />
-          
         </div>
       </section>
     </div>
   );
-}
+};
 
-export default HeroPage
+export default HeroPage;

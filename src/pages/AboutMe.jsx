@@ -1,4 +1,3 @@
-import React from "react";
 import SectionHeading from "../components/SectionHeading";
 import ServiceCard from "../components/ServiceCard";
 import Divider from "../components/Divider";
